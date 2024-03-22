@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FireHydrant" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2fe61a73-b0c2-4c8f-9362-a3b3e6ced369">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FireHydrant" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2fe61a73-b0c2-4c8f-9362-a3b3e6ced369">
 	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
 		<box>
 			<pen lineWidth="0.5" lineColor="#000000"/>
@@ -66,7 +66,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<pageHeader>
-		<band height="178" splitType="Stretch">
+		<band height="139" splitType="Stretch">
 			<image>
 				<reportElement x="2" y="2" width="80" height="80" backcolor="#DBECF9" uuid="9dd1fd3e-23b3-4703-9a0c-65f8a27b7ce7"/>
 				<imageExpression><![CDATA["https://d13s974wlhjeu6.cloudfront.net/DC%20Water%20Logo%20JPG.JPG"]]></imageExpression>
@@ -78,7 +78,7 @@
 				</reportElement>
 			</line>
 			<staticText>
-				<reportElement x="100" y="80" width="300" height="30" backcolor="#FFFFFF" uuid="7b872c39-167f-4a92-a3c8-612bd09329bb"/>
+				<reportElement x="110" y="90" width="300" height="30" backcolor="#FFFFFF" uuid="7b872c39-167f-4a92-a3c8-612bd09329bb"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -107,10 +107,10 @@
 	<detail>
 		<band height="624" splitType="Stretch">
 			<rectangle>
-				<reportElement x="480" y="0" width="75" height="21" uuid="d16147a2-b89a-4bee-a726-14762fd4e9e3"/>
+				<reportElement x="480" y="0" width="80" height="21" uuid="d16147a2-b89a-4bee-a726-14762fd4e9e3"/>
 			</rectangle>
 			<textField>
-				<reportElement x="471" y="0" width="84" height="20" uuid="c6cbe003-18f9-4d61-afa0-7042bf509fef"/>
+				<reportElement x="480" y="0" width="90" height="20" uuid="c6cbe003-18f9-4d61-afa0-7042bf509fef"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$P{Tracking#}]]></textFieldExpression>
 			</textField>
@@ -305,7 +305,7 @@
 				</reportElement>
 			</line>
 			<rectangle>
-				<reportElement x="300" y="32" width="255" height="21" uuid="ccfb5864-9250-42d4-8e13-0e341a58d3d5"/>
+				<reportElement x="300" y="32" width="260" height="21" uuid="ccfb5864-9250-42d4-8e13-0e341a58d3d5"/>
 			</rectangle>
 			<staticText>
 				<reportElement x="385" y="34" width="100" height="30" uuid="27314ee0-a344-4ed5-8cdb-2e382797962f"/>
@@ -315,7 +315,7 @@
 				<text><![CDATA[Fire Hydrant]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="480" y="54" width="74" height="16" uuid="06280c5f-e389-4b63-b7fa-559ac27e46fe"/>
+				<reportElement x="480" y="54" width="80" height="16" uuid="06280c5f-e389-4b63-b7fa-559ac27e46fe"/>
 				<box>
 					<pen lineStyle="Dotted"/>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -365,7 +365,7 @@
 				<text><![CDATA[To]]></text>
 			</staticText>
 			<textField>
-				<reportElement mode="Opaque" x="490" y="71" width="65" height="18" forecolor="#FFFFFF" backcolor="#F5202E" uuid="a2cc335d-b4cb-4404-af42-c21220ad4f50"/>
+				<reportElement mode="Opaque" x="490" y="70" width="70" height="18" forecolor="#FFFFFF" backcolor="#F5202E" uuid="a2cc335d-b4cb-4404-af42-c21220ad4f50"/>
 				<box>
 					<pen lineWidth="1.0" lineStyle="Dotted"/>
 					<topPen lineWidth="1.0" lineStyle="Dotted" lineColor="#000000"/>
@@ -389,74 +389,6 @@
 				<textElement textAlignment="Center"/>
 				<text><![CDATA[Number of Fire Hydrant Use Days]]></text>
 			</staticText>
-			<rectangle>
-				<reportElement x="0" y="200" width="554" height="50" uuid="060c72ce-2302-460a-8949-a4e3ad04d0e6"/>
-			</rectangle>
-			<staticText>
-				<reportElement mode="Opaque" x="0" y="200" width="555" height="21" backcolor="#4CD5ED" uuid="f07892a5-a106-4706-a702-934f74bfd563"/>
-				<box>
-					<pen lineWidth="1.0" lineStyle="Dotted"/>
-					<topPen lineWidth="1.0" lineStyle="Dotted" lineColor="#000000"/>
-					<leftPen lineWidth="1.0" lineStyle="Dotted" lineColor="#000000"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#000000"/>
-				</box>
-				<textElement textAlignment="Center" markup="rtf">
-					<font size="14" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Purpose of Fire Hydrant Use Permit]]></text>
-			</staticText>
-			<rectangle>
-				<reportElement x="0" y="260" width="554" height="50" uuid="03715d61-b4fc-4015-9e71-7fcc3f4076b5"/>
-			</rectangle>
-			<staticText>
-				<reportElement mode="Opaque" x="1" y="260" width="553" height="20" backcolor="#4CD5ED" uuid="b123387c-0663-4d3f-92c4-174e0e27bd8c"/>
-				<box>
-					<pen lineStyle="Dotted"/>
-					<topPen lineWidth="1.0" lineStyle="Dotted" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement textAlignment="Center" markup="">
-					<font size="14" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Location]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="2" y="281" width="552" height="29" uuid="11f8595b-f75d-47bc-b85e-8d4c09cf051f"/>
-				<textElement textAlignment="Left">
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[  Various]]></text>
-			</staticText>
-			<staticText>
-				<reportElement mode="Opaque" x="2" y="463" width="552" height="26" backcolor="#4CD5ED" uuid="61545202-8631-4afb-96f3-81c684e9159f"/>
-				<box>
-					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement textAlignment="Center" markup="">
-					<font size="14" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Castomer Service Restriction]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="340" y="540" width="214" height="20" uuid="bef86925-a1ba-4084-bf49-3236a8223e55"/>
-				<box>
-					<pen lineWidth="1.0" lineStyle="Solid"/>
-					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement textAlignment="Center" markup="">
-					<font size="12" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Dc Water Compliance Program Rep]]></text>
-			</staticText>
 			<staticText>
 				<reportElement x="340" y="560" width="112" height="20" uuid="e8f1c63e-bb93-4089-9314-47a62c9d9e1c"/>
 				<box>
@@ -471,7 +403,7 @@
 				<text><![CDATA[Signature]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="453" y="560" width="101" height="20" uuid="3650f01e-04ca-47d5-a2e0-641d86ed1801"/>
+				<reportElement x="453" y="560" width="102" height="20" uuid="3650f01e-04ca-47d5-a2e0-641d86ed1801"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -484,7 +416,17 @@
 				<text><![CDATA[Date]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="340" y="580" width="112" height="30" uuid="009f2730-187f-4642-b490-0d9797209d84"/>
+				<reportElement mode="Opaque" x="-3" y="198" width="560" height="29" backcolor="#4CD5ED" uuid="038693bb-c13e-4825-8d2e-e1a7a2c18afd"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Purpose of Fire Hydrant Use Permit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-3" y="228" width="560" height="29" uuid="7e672b30-e84b-464c-a5e2-866cf7d58e86"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -494,7 +436,67 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="453" y="580" width="101" height="30" uuid="211a571e-de18-42d9-bbb9-5aad9c3b98bb"/>
+				<reportElement style="Table_CH" mode="Opaque" x="2" y="280" width="559" height="28" backcolor="#4CD5ED" uuid="fd936d07-7101-4553-93d8-55671bf5b9e2"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" markup="styled">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Location]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="309" width="559" height="29" uuid="0b167980-e391-48c5-a15b-00e1154c7850"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Various]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="-1" y="450" width="558" height="29" backcolor="#4CD5ED" uuid="394c8385-d3d1-45cd-a72a-0dc39fc83d1c"/>
+				<box>
+					<pen lineStyle="Solid"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" markup="styled">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Castomer Service Restriction]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="540" width="215" height="21" uuid="0361078f-6819-4546-b55c-36d77b628179"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dc Water Compliance Program Rep]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="581" width="112" height="21" uuid="6c8843ed-4ebd-48ae-b149-90d2ad61740b"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="452" y="581" width="103" height="21" uuid="68e9b362-ec52-407f-986a-4d12d823cfdf"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
